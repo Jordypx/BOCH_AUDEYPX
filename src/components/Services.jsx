@@ -17,7 +17,7 @@ const Services = () => {
     <div>
       <div className={`header_bg ${isOpen ? "menu-open" : ""}`}>
         <header className="flex justify-between gap-5 items-center p-5">
-          <div className="">
+          <div className="embed">
             <h1 className="text-white text-lg font-semibold">Embed Digital</h1>
           </div>
 

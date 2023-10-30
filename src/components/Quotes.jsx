@@ -17,8 +17,8 @@ const Quotes = () => {
     <div>
       <div className={`header_bg ${isOpen ? "menu-open" : ""}`}>
         <header className="flex justify-between gap-5 items-center p-5">
-          <div className="">
-            <h1 className="text-white text-lg font-semibold">Embed Digital</h1>
+          <div className="embed">
+            <h1 className="text-lg font-semibold">Embed Digital</h1>
           </div>
 
           <div className="list-menu-II">
@@ -80,7 +80,32 @@ const Quotes = () => {
           </div>
         </header>
       </div>
-
+      <div className="quote-body">
+        <div class="quote-container">
+          <form id="contact" action="" method="post">
+            <h3>Contact us for custom quote</h3>
+            <h4>Please input details below</h4>
+            <fieldset>
+              <input placeholder="Your name" type="text" tabindex="1" required autofocus />
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Email Address" type="email" tabindex="2" required />
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required />
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required />
+            </fieldset>
+            <fieldset>
+              <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
       <footer>
         <div className="flex justify-between">
           <div className="">

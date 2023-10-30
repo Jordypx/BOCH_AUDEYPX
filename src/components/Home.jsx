@@ -83,29 +83,29 @@ const Home = () => {
 
         <div className="hero-image">
           <div className="explore_companies_way">
-          <div className="text_explorer p-4">
-            <div className="demo">
-              <h1 className=" text-2xl">
-                Democratising Access To Affordable Digital Platforms
-              </h1>
+            <div className="text_explorer p-4">
+              <div className="demo">
+                <h1 className=" text-2xl">
+                  Democratising Access To Affordable Digital Platforms
+                </h1>
 
-              <p className="hero-paragraph">
-                Embed Digital Solutions (EDS) deploys Digital Insurance
-                solutions to deliver a competitive advantage within the
-                insurance and health services value chain, by taking into
-                account the needs of every stakeholder within the Ecosystem. Our
-                cooperate Objective is to democratise access to affordable
-                digital platforms for optimized financial performance for the
-                benefit of all stakeholders.
-              </p>
+                <p className="hero-paragraph">
+                  Embed Digital Solutions (EDS) deploys Digital Insurance
+                  solutions to deliver a competitive advantage within the
+                  insurance and health services value chain, by taking into
+                  account the needs of every stakeholder within the Ecosystem. Our
+                  cooperate Objective is to democratise access to affordable
+                  digital platforms for optimized financial performance for the
+                  benefit of all stakeholders.
+                </p>
+              </div>
+
+              <div className="hero-btn">
+                <button>Consult now</button>
+              </div>
             </div>
 
-            <div className="hero-btn">
-              <button>Consult now</button>
-            </div>
-          </div>
-
-          {/* <div className="img-home-progress">
+            {/* <div className="img-home-progress">
             <div className="desk">
               <img src="../cyber101 (1).png" alt="cyber" />
             </div>
@@ -141,7 +141,7 @@ const Home = () => {
 
         <div className="service_list mt-20 mb-28">
           <div className="head-text-servies">
-            <h1>What Are Our Platforms Key Features</h1>
+            <h1>Our Key Features</h1>
           </div>
 
           <div className="key-features">
@@ -169,6 +169,99 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="table-section">
+        <div className="head-text-servies">
+          <h1>Our Platform Solution
+          </h1>
+        </div>
+
+        <table class="pricing-table">
+          <tbody><tr>
+            <td width="30%" class="pricing-table-text">
+              <h2>Select the package that best suits your needs.</h2>
+
+            </td>
+            <td class="bg-td" width="20%">
+              <div class="pricing-table-item">
+                <div class="pricing-table-item-head">
+                  <p>Basic</p>
+                </div>
+              </div>
+            </td>
+            <td class="bg-td" width="20%">
+              <div class="pricing-table-item">
+                <div class="pricing-table-item-head">
+                  <p>Advanced</p>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+            <tr class="pricing-table-list">
+              <td>Free Domain</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+            </tr>
+            <tr class="pricing-table-list">
+              <td>Websites</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+
+            </tr>
+            <tr class="pricing-table-list">
+              <td>Bandwidth</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+
+            </tr>
+            <tr class="pricing-table-list">
+              <td>Disk Space</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+
+            </tr>
+            <tr class="pricing-table-list">
+              <td>MySQL Databases</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+            </tr>
+            <tr class="pricing-table-list">
+              <td>Email Addresses</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+            </tr>
+            <tr class="pricing-table-list">
+              <td>Premium DNS</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+            </tr>
+            <tr class="pricing-table-list">
+              <td>SSL Certificate</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+            </tr>
+            <tr class="pricing-table-list">
+              <td>Support</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+            </tr>
+            <tr class="pricing-table-list">
+              <td>Support</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+            </tr>
+            <tr class="pricing-table-list">
+              <td>Support</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+            </tr>
+            <tr class="pricing-table-list">
+              <td>Support</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+            </tr>
+          </tbody></table>
       </div>
 
       <footer>
