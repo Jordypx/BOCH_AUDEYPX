@@ -1,14 +1,13 @@
-import { Link } from "react-router-dom";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import { AiOutlineClose } from "react-icons/ai";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { BiLogoFacebook } from "react-icons/bi";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/ai";
 
-import { useState } from "react";
-
-const Home = () => {
+const Contact = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -18,7 +17,7 @@ const Home = () => {
     <div>
       <div className={`header_bg ${isOpen ? "menu-open" : ""}`}>
         <header className="flex justify-between gap-5 items-center p-5">
-          <div className="embed">
+          <div className="">
             <h1 className="text-white text-lg font-semibold">Embed Digital</h1>
           </div>
 
@@ -81,90 +80,37 @@ const Home = () => {
           </div>
         </header>
 
-        <div className="explore_companies_way">
-          <div className="text_explorer p-4">
-            <div className="demo">
-              <h1 className=" text-2xl">
-                Democratising Access To Affordable Digital Platforms
-              </h1>
-
-              <p className="hero-paragraph">
-                Embed Digital Solutions (EDS) deploys Digital Insurance
-                solutions to deliver a competitive advantage within the
-                insurance and health services value chain, by taking into
-                account the needs of every stakeholder within the Ecosystem. Our
-                cooperate Objective is to democratise access to affordable
-                digital platforms for optimized financial performance for the
-                benefit of all stakeholders.
-              </p>
-            </div>
-
-            <div className="hero-btn">
-              <button>consult now</button>
-            </div>
-          </div>
-
-          <div className="img-home-progress">
-            <div className="desk">
-              <img src="../cyber101 (1).png" alt="cyber" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="it-solutions_s">
-        <div className="text-flex-lonf">
-          <div className="solutions_imgs_text">
-            <h1 className="">DIGITAL SOLUTIONS ON ONE PLATFORM</h1>
+        <div className="contact-us">
+          <div className="head">
+            <h1>Contact Us </h1>
 
             <p>
-              Our low code and prepackaged platform is designed to ensure
-              standard day-to-day <br /> insurance operations seamlessly. With
-              minimal configurations, our platform enables insurers to achieve
-              faster time-to-value by reducing the implementation time with
-              these solutions.
+              contact us now to meet your needs and desire at embed digital
+              solutions
             </p>
-
-            <div className="hero-btn mt-4">
-              <button>consult now</button>
-            </div>
           </div>
 
-          <div className="solutions_img">
-            <div className="img-solu">
-              <img className="" src="../pngtree-business-analysis.png" alt="" />
-            </div>
-          </div>
-        </div>
+          <div className="contact-display">
+            <form>
+              <input
+                placeholder="your email address"
+                type="email"
+                name="email"
+                required
+              />
 
-        <div className="service_list mt-20 mb-28">
-          <div className="head-text-servies">
-            <h1>What Are Our Platforms Key Features</h1>
-          </div>
+              <input type="text" placeholder="your name" />
 
-          <div className="key-features">
-            <div className="features-text">
-              <div className="">
-                <p>Low code No code</p>
-              </div>
-            </div>
-            <div className="features-text">
-              AI & BI ENABLED DIGITAL ECOSYSTEMS&nbsp;
-            </div>
-            <div className="features-text">
-              DIGITILIZING CUSTOMER JOURNEY&nbsp;
-            </div>
-            <div className="features-text">
-              FLEXIBE AND MODULAR PRODUCT DESIGN&nbsp;
-            </div>
-            <div className="features-text">
-              OMNI CHANNEL CUSTOMER EXPERIENCE AND APIs&nbsp;
-            </div>
-            <div className="features-text">Software As A Service Provider</div>
-            <div className="features-text">Swift And Easy Deployment</div>
-            <div className="features-text">
-              Scalable And Reliable Cloud Architecture
-            </div>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                cols="50"
+                placeholder="your message"
+              />
+
+              <button>Send Message</button>
+            </form>
           </div>
         </div>
       </div>
@@ -222,4 +168,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Contact;
