@@ -13,9 +13,11 @@ body {
   scroll-behavior: smooth;
 }
 
+
 .header_bg {
   background: linear-gradient(to right, #112847, #0f4068);
-  transition: width 0.5s; /* Add animation to menu sliding */
+  transition: width 0.5s;
+  /* Add animation to menu sliding */
   overflow: hidden;
 }
 
@@ -23,8 +25,7 @@ body {
   width: 100%;
 }
 
-header {
-}
+header {}
 
 .list-ttr {
   position: absolute;
@@ -35,7 +36,8 @@ header {
   right: 0%;
   background-color: #07101f;
   padding: 3rem;
-  transition: transform 5s; /* Add animation to list sliding */
+  transition: transform 5s;
+  /* Add animation to list sliding */
   transform: translateX(-30%);
 }
 
@@ -79,7 +81,8 @@ header {
 }
 
 .text_explorer {
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .text_explorer .demo h1 {
@@ -98,11 +101,12 @@ header {
 }
 
 .text_explorer .hero-btn button {
-  background: linear-gradient(to right, #01a3f8, #0078f9);
-  color: #ffffffc2;
-  padding: 0.4rem;
-  font-size: 0.8rem;
+  background: linear-gradient(to right, #fd7702, #ff8e00);
+  color: #fff;
+  padding: 0.7rem;
+  font-size: 1rem;
   margin-top: 1.2rem;
+  font-weight: bold;
   width: 32%;
   cursor: pointer;
   border-radius: 0.3rem;
@@ -121,11 +125,12 @@ header {
 
 .it-solutions_s {
   background-color: #13213c;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .solutions_imgs_text {
   margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 .solutions_imgs_text h1 {
@@ -144,11 +149,13 @@ header {
 }
 
 .solutions_imgs_text .hero-btn button {
-  background: linear-gradient(to right, #01a3f8, #0078f9);
-  color: #ffffffc2;
+  background: linear-gradient(to right, #fd7702, #ff8e00);
+  /* color: #ffffffc2; */
+  color: #fff;
   padding: 0.4rem;
   font-size: 0.8rem;
   margin-top: 0.5rem;
+  font-weight: bold;
   width: 32%;
   cursor: pointer;
   border-radius: 0.3rem;
@@ -202,18 +209,18 @@ header {
 
 footer {
   background-color: #07101f;
-  padding: 1.4rem;
+  padding: 1.4rem 6rem;
 }
 
 .logo-head h1 {
-  color: #fff;
+  color: #ff8e00;
   font-size: 0.9rem;
   font-weight: 600;
 }
 
 .first-link ul li {
   color: #fff;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   margin-bottom: 0.7rem;
   cursor: pointer;
   font-weight: 500;
@@ -230,10 +237,15 @@ footer {
   display: none;
 }
 
+.list-menu-II ul li a:hover {
+  color: #ff8e00;
+}
+
 .icons .text-xl {
   color: #fff;
   font-size: 1rem;
-  background-color: #10aede;
+  /* background-color: #10aede; */
+  background-color: #ff8e00;
   padding: 0.3rem;
   border-radius: 50%;
 }
@@ -419,7 +431,8 @@ footer {
 .features-boxes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px; /* Gap between items */
+  gap: 30px;
+  /* Gap between items */
   margin-top: 2rem;
 }
 
@@ -558,8 +571,9 @@ form textarea {
 }
 
 form button {
-  background: linear-gradient(to right, #01a3f8, #0078f9);
-  color: #ffffffc2;
+  /* background: linear-gradient(to right, #01a3f8, #0078f9); */
+  background: linear-gradient(to right, #fd7702, #ff8e00);
+  color: #fff;
   padding: 0.7rem;
   font-size: 0.8rem;
   margin-top: 1.9rem;
@@ -592,20 +606,35 @@ form button {
     font-size: 0.9rem;
   }
 
+  .hero-image {
+    background-image: url(/public/hero-sec-image.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    padding: 6rem 0rem;
+    overflow-x: hidden;
+  }
+
   .explore_companies_way {
-    display: flex;
-    padding: 3rem;
-    margin-left: 2rem;
+    /* display: flex; */
+    padding: 3rem 0rem;
+    text-align: center;
+    margin: auto;
+    width: 75%;
   }
 
   .text_explorer .demo h1 {
-    width: 45%;
-    font-size: 2rem;
+    width: 100%;
+    font-size: 2.5rem;
     line-height: 40px;
+    text-align: center;
+    margin: auto;
   }
 
   .text_explorer .demo p {
-    width: 50%;
+    width: 90%;
+    text-align: center;
+    font-size: large;
+    margin: 1rem auto;
   }
 
   .img-home-progress .desk {
@@ -620,12 +649,14 @@ form button {
   }
 
   .text_explorer .hero-btn button {
-    width: 10%;
+    width: 15%;
   }
 
   header .embed h1 {
     margin-left: 4rem;
     width: 100%;
+    color: #ffa500;
+    /* color: #ff8e00; */
   }
 
   .text-flex-lonf {

@@ -19,7 +19,7 @@ const Home = () => {
       <div className={`header_bg ${isOpen ? "menu-open" : ""}`}>
         <header className="flex justify-between gap-5 items-center p-5">
           <div className="embed">
-            <h1 className="text-white text-lg font-semibold">Embed Digital</h1>
+            <h1 className=" logo text-lg font-semibold">Embed Digital</h1>
           </div>
 
           <div className="list-menu-II">
@@ -81,7 +81,8 @@ const Home = () => {
           </div>
         </header>
 
-        <div className="explore_companies_way">
+        <div className="hero-image">
+          <div className="explore_companies_way">
           <div className="text_explorer p-4">
             <div className="demo">
               <h1 className=" text-2xl">
@@ -100,14 +101,15 @@ const Home = () => {
             </div>
 
             <div className="hero-btn">
-              <button>consult now</button>
+              <button>Consult now</button>
             </div>
           </div>
 
-          <div className="img-home-progress">
+          {/* <div className="img-home-progress">
             <div className="desk">
               <img src="../cyber101 (1).png" alt="cyber" />
             </div>
+          </div> */}
           </div>
         </div>
       </div>
@@ -126,7 +128,7 @@ const Home = () => {
             </p>
 
             <div className="hero-btn mt-4">
-              <button>consult now</button>
+              <button>Consult now</button>
             </div>
           </div>
 
