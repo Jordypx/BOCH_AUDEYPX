@@ -418,7 +418,7 @@ footer {
 
 .features-boxes {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px; /* Gap between items */
   margin-top: 2rem;
 }
