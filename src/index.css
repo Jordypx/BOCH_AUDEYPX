@@ -25,7 +25,10 @@ body {
   width: 100%;
 }
 
-header {}
+header .embed h1 {
+  color: #ffa500;
+  /* color: #ff8e00; */
+}
 
 .list-ttr {
   position: absolute;
@@ -103,9 +106,9 @@ header {}
 .text_explorer .hero-btn button {
   background: linear-gradient(to right, #fd7702, #ff8e00);
   color: #fff;
-  padding: 0.7rem;
-  font-size: 1rem;
-  margin-top: 1.2rem;
+  padding: 0.4rem;
+  font-size: 0.8rem;
+  margin-top: 1rem;
   font-weight: bold;
   width: 32%;
   cursor: pointer;
@@ -118,14 +121,14 @@ header {}
   margin-left: -1.5rem;
 }
 
-.img-home-progress .desk img {
+.text_explorer .hero-btn button .img-home-progress .desk img {
   width: 100%;
   filter: brightness(0.9) contrast(2) blur(0);
 }
 
 .it-solutions_s {
   background-color: #13213c;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .solutions_imgs_text {
@@ -178,6 +181,7 @@ header {}
   font-size: 1.55rem;
   text-align: center;
   font-weight: 600;
+  padding: 3rem 0rem 1rem 0rem;
 }
 
 /* .head-text-servies p {
@@ -325,7 +329,7 @@ footer {
 .bio-img img {
   /* width: 100%; */
   /* position: absolute; */
-  padding-left: 3em;
+  padding-left: 2em;
   padding-top: 1rem;
 }
 
@@ -504,7 +508,7 @@ table {
 
 th,
 td {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   padding: 8px;
   text-align: left;
 }
@@ -520,6 +524,7 @@ td {
 .table-container {
   background-color: #0e4e7a;
   padding: 1rem;
+  /* border-radius: 2rem; */
 }
 
 /* CONTACT */
@@ -711,14 +716,15 @@ form button {
   }
 
   .bio-img {
-    width: 50%;
-    background-color: #fff;
+    width: 25%;
+    background-color: #0c172b;
     margin: 0 auto;
+    border-radius: 50%;
   }
 
   .bio-img img {
-    width: 50%;
-    margin: 0 auto;
+    padding-left: 4em;
+    padding-top: 1rem;
   }
 
   .oracle-img {
@@ -794,14 +800,14 @@ form button {
   background: linear-gradient(to right, #112847, #0f4068);
   transition: width 0.5s;
   overflow: hidden;
-  padding: 25px;
+  padding: 1rem;
   /* margin: 0.2rem 0; */
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 #contact h3 {
   display: block;
-  font-size: 25px;
+  font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 10px;
   text-align: center;
@@ -905,25 +911,26 @@ fieldset {
 
 
 /* pricing table */
-.table-section{
+.table-section {
   background: linear-gradient(to right, #0f355a, #0f2c4c);
 }
+
 .pricing-table {
   padding: 0rem;
-  margin: 4rem auto;
+  margin: 0rem auto;
   border: 1px solid #0f355a;
-  width: 75%;
+  width: 95%;
   background: linear-gradient(to right, #0f355a, #0f2c4c);
 }
 
 .pricing-table td {
   padding: 0px;
-  border-left: 1px solid #ffffff32;
+  /* border-left: 1px solid #ffffff32; */
   font-size: 0.8rem;
   background-color: #13213c;
   padding: 1rem;
   color: #ffffffcc;
-  border: 1px solid #ffffff32;
+  /* border: 1px solid #ffffff32; */
 }
 
 .pricing-table .pricing-table-list td {
@@ -934,7 +941,7 @@ fieldset {
   background: linear-gradient(to right, #0f355a, #0f2c4c);
   padding: 1rem;
   color: #ffffffcc;
-  border: 1px solid #ffffff32;
+  /* border: 1px solid #ffffff32; */
 }
 
 .pricing-table .pricing-table-list .glyphicon-ok {
@@ -958,21 +965,20 @@ fieldset {
   background: linear-gradient(to right, #0f355a, #0f2c4c);
   padding: 1rem;
   color: #ffffffcc;
-  border: 1px solid #ffffff32;
+  /* border: 1px solid #ffffff32; */
 }
 
 .pricing-table .pricing-table-text h2 {
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 33px;
-    margin: 0px;
-    padding: 0px;
-    /* text-align: center; */
-    color: #ffffffe3;
-    width: 70%;
-    padding: 0.5rem;
-    font-weight: 400;
-    
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 33px;
+  margin: 0px;
+  padding: 0px;
+  /* text-align: center; */
+  color: #ffffffe3;
+  width: 100%;
+  padding: 0.5rem;
+
 }
 
 .pricing-table .pricing-table-text p {
@@ -985,7 +991,8 @@ fieldset {
 .pricing-table .pricing-table-item {
   /* color: #FFF; */
 }
-.bg-td{
+
+.bg-td {
   background: #fd7702;
 }
 
@@ -996,10 +1003,9 @@ fieldset {
 }
 
 .pricing-table .pricing-table-item .pricing-table-item-head p {
-  font-size: 17px;
+  font-size: 0.8rem;
   font-weight: 600;
   line-height: 21px;
-  text-transform: uppercase;
   margin-bottom: 0px;
 }
 
@@ -1043,4 +1049,210 @@ fieldset {
   margin-bottom: 0px;
 }
 
-/* eof pricing table */
+
+/* SERVICE TABLE   */
+.rwd-table {
+  margin: auto;
+  min-width: 300px;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+.rwd-table tr:first-child {
+  border-top: none;
+  background: #13213c;
+  color: #fff;
+}
+
+.rwd-table tr {
+  /* border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; */
+  background-color: #0f355a;
+}
+
+.rwd-table tr:nth-child(odd):not(:first-child) {
+  background-color: #13213c;
+}
+
+.rwd-table th {
+  display: none;
+}
+
+.rwd-table td {
+  display: block;
+}
+
+.rwd-table td:first-child {
+  margin-top: .5em;
+}
+
+.rwd-table td:last-child {
+  margin-bottom: .5em;
+}
+
+/* .rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 120px;
+  display: inline-block;
+  color: #fff;
+} */
+
+.rwd-table th,
+.rwd-table td {
+  text-align: left;
+}
+
+.rwd-table {
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+.rwd-table tr {
+  /* border-color: #bfbfbf; */
+}
+
+.rwd-table th,
+.rwd-table td {
+  padding: .5em 1em;
+}
+
+@media screen and (max-width: 601px) {
+  .rwd-table tr:nth-child(2) {
+    border-top: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .rwd-table tr:hover:not(:first-child) {
+  }
+
+  .rwd-table td:before {
+    display: none;
+  }
+
+  .rwd-table th,
+  .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+
+  .rwd-table th:first-child,
+  .rwd-table td:first-child {
+    padding-left: 0;
+  }
+
+  .rwd-table th:last-child,
+  .rwd-table td:last-child {
+    padding-right: 0;
+  }
+
+  .rwd-table th,
+  .rwd-table td {
+    padding: 1em !important;
+  }
+}
+
+
+/* THE END OF THE IMPORTANT STUFF */
+
+/* Basic Styling */
+/* body {
+  background: #4B79A1;
+  background: -webkit-linear-gradient(to left, #4B79A1, #283E51);
+  background: linear-gradient(to left, #4B79A1, #283E51);
+} */
+
+h1 {
+  text-align: center;
+  font-size: 2.4em;
+  color: #f2f2f2;
+}
+
+.table-container {
+  display: block;
+  background: linear-gradient(to right, #112847, #0f4068);
+  text-align: center;
+}
+
+h3 {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  color: #cecece;
+}
+
+/* h3:before {
+  content: "\25C0";
+  position: absolute;
+  left: -50px;
+  -webkit-animation: leftRight 2s linear infinite;
+  animation: leftRight 2s linear infinite;
+}
+
+h3:after {
+  content: "\25b6";
+  position: absolute;
+  right: -50px;
+  -webkit-animation: leftRight 2s linear infinite reverse;
+  animation: leftRight 2s linear infinite reverse;
+} */
+
+@-webkit-keyframes leftRight {
+  0% {
+    -webkit-transform: translateX(0)
+  }
+
+  25% {
+    -webkit-transform: translateX(-10px)
+  }
+
+  75% {
+    -webkit-transform: translateX(10px)
+  }
+
+  100% {
+    -webkit-transform: translateX(0)
+  }
+}
+
+@keyframes leftRight {
+  0% {
+    transform: translateX(0)
+  }
+
+  25% {
+    transform: translateX(-10px)
+  }
+
+  75% {
+    transform: translateX(10px)
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}
+
+/*
+    Don't look at this last part. It's unnecessary. I was just playing with pixel gradients... Don't judge.
+*/
+/*
+@media screen and (max-width: 601px) {
+  .rwd-table tr {
+    background-image: -webkit-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -moz-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -o-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -ms-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+  }
+  .rwd-table tr:nth-child(odd) {
+    background-image: -webkit-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -moz-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -o-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -ms-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+  }
+}*/

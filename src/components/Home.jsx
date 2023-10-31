@@ -83,7 +83,7 @@ const Home = () => {
 
         <div className="hero-image">
           <div className="explore_companies_way">
-            <div className="text_explorer p-4">
+            <div className="text_explorer p-3">
               <div className="demo">
                 <h1 className=" text-2xl">
                   Democratising Access To Affordable Digital Platforms
@@ -151,16 +151,16 @@ const Home = () => {
               </div>
             </div>
             <div className="features-text">
-              AI & BI ENABLED DIGITAL ECOSYSTEMS&nbsp;
+              AI & BI Enabled Digital Ecosystems&nbsp;
             </div>
             <div className="features-text">
-              DIGITILIZING CUSTOMER JOURNEY&nbsp;
+              Digitalizing Customer Journey&nbsp;
             </div>
             <div className="features-text">
-              FLEXIBE AND MODULAR PRODUCT DESIGN&nbsp;
+              Flexible And Modular Product Design&nbsp;
             </div>
             <div className="features-text">
-              OMNI CHANNEL CUSTOMER EXPERIENCE AND APIs&nbsp;
+              Omni Channel Customer Experience And APIs&nbsp;
             </div>
             <div className="features-text">Software As A Service Provider</div>
             <div className="features-text">Swift And Easy Deployment</div>
@@ -185,80 +185,85 @@ const Home = () => {
             <td class="bg-td" width="20%">
               <div class="pricing-table-item">
                 <div class="pricing-table-item-head">
-                  <p>Basic</p>
+                  <p>Lite Essential</p>
                 </div>
               </div>
             </td>
             <td class="bg-td" width="20%">
               <div class="pricing-table-item">
                 <div class="pricing-table-item-head">
-                  <p>Advanced</p>
+                  <p>Lite Pro</p>
                 </div>
               </div>
             </td>
           </tr>
 
             <tr class="pricing-table-list">
-              <td>Free Domain</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td>Digital Quotations & Illustrations</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
               <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
             </tr>
             <tr class="pricing-table-list">
-              <td>Websites</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
-              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
-
-            </tr>
-            <tr class="pricing-table-list">
-              <td>Bandwidth</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td>Individual Retail Business</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
               <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
 
             </tr>
             <tr class="pricing-table-list">
-              <td>Disk Space</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td>Policy Acquisition</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
               <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
 
             </tr>
             <tr class="pricing-table-list">
-              <td>MySQL Databases</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td>Abandoned Cart</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
+              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+
+            </tr>
+            <tr class="pricing-table-list">
+              <td>Document Uploads & View</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
               <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
             </tr>
             <tr class="pricing-table-list">
-              <td>Email Addresses</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td>Online Policy Issuance</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
               <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
             </tr>
             <tr class="pricing-table-list">
-              <td>Premium DNS</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td>Basic Renewal Underwriting</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
               <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
             </tr>
             <tr class="pricing-table-list">
-              <td>SSL Certificate</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td>Multiple Notifications</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
               <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
             </tr>
             <tr class="pricing-table-list">
-              <td>Support</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td>Endorsements Non-Financial</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
               <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
             </tr>
             <tr class="pricing-table-list">
-              <td>Support</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td>Customer Complaints And Feedback</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
               <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
             </tr>
             <tr class="pricing-table-list">
-              <td>Support</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td>Claims FNOL</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
               <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
             </tr>
             <tr class="pricing-table-list">
-              <td>Support</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
+              <td>Claims Surveys</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
+              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+            </tr>
+            <tr class="pricing-table-list">
+              <td>Business Reporting & Analytics</td>
+              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
               <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
             </tr>
           </tbody></table>
