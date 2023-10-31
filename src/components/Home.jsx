@@ -233,7 +233,7 @@ const Home = () => {
             </tr>
             <tr class="pricing-table-list">
               <td>Basic Renewal Underwriting</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
+              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
               <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
             </tr>
             <tr class="pricing-table-list">
@@ -258,7 +258,7 @@ const Home = () => {
             </tr>
             <tr class="pricing-table-list">
               <td>Claims Surveys</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
+              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
               <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
             </tr>
             <tr class="pricing-table-list">

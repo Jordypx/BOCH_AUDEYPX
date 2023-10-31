@@ -123,10 +123,10 @@ const AboutUs = () => {
             </div>
 
             <div className="bio-text">
-              <h1>Steve Adujua</h1>
+              <h1>Steve Ajdua</h1>
 
               <p>Country Business Manager</p>
-              <div>(Nigeria & AfricaRegion)</div>
+              <div>(Nigeria & Africa Region)</div>
             </div>
           </div>
 

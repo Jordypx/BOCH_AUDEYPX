@@ -272,7 +272,7 @@ footer {
 .brand-distruptive p {
   margin-top: 1rem;
   line-height: 22px;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   color: #ffffffad;
   text-align: center;
   width: 100%;
@@ -293,7 +293,7 @@ footer {
 .embed-works p {
   margin-top: 1rem;
   line-height: 22px;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   color: #ffffffad;
   text-align: center;
   width: 100%;
@@ -339,33 +339,35 @@ footer {
 
 .bio-text h1 {
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 500;
   text-align: center;
 }
 
 .bio-text p {
   color: #fff;
-  font-size: 0.7rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 
 .bio-text div {
   text-align: center;
   color: #fff;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   margin-top: 0.3rem;
 }
 
 .bio-para-steve {
   margin-top: 1rem;
   padding: 0.6rem;
+  margin: auto;
+    width: 85%;
 }
 
 .bio-para-steve p {
   margin-top: 2rem;
   line-height: 22px;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   color: #ffffffad;
   text-align: center;
   width: 100%;
@@ -374,7 +376,7 @@ footer {
 .bio-para-steve div {
   margin-top: 1rem;
   line-height: 22px;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   color: #ffffffad;
   text-align: center;
   width: 100%;
@@ -734,9 +736,6 @@ fieldset {
 
 
 @media screen and (min-width: 768px) {
-  h1 {
-    text-align: center;
-  }
 
   .list-ttr {
     display: none;
@@ -850,11 +849,15 @@ fieldset {
 
   .embed-works p {
     width: 60%;
+    padding-top: 0.7rem;
     margin-left: 14rem;
+    margin: auto;
   }
 
   .brand-distruptive p {
-    width: 60%;
+    width: 70%;
+    margin: auto;
+    padding-top: 0.7rem;
     margin-left: 14rem;
   }
 
