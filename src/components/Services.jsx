@@ -15,10 +15,21 @@ const Services = () => {
   };
   return (
     <div>
-      <div className={`header_bg ${isOpen ? "menu-open" : ""}`}>
-        <header className="flex justify-between gap-5 items-center p-5">
-          <div className="embed">
-            <h1 className="text-white text-lg font-semibold">Embed Digital</h1>
+      <div className="header_bg">
+        <header className="flex justify-between p-4 items-center">
+          <div className="embed flex">
+            <Link to="/">
+              <h1 className=" logo text-lg font-semibold">Embed Digital</h1>
+            </Link>
+          </div>
+
+          <div className="icon">
+            <div
+              className={`hamicon ${isOpen ? "hide" : ""}`}
+              onClick={toggleMenu}
+            >
+              <HiOutlineMenuAlt3 />
+            </div>
           </div>
 
           <div className="list-menu-II">
@@ -43,18 +54,14 @@ const Services = () => {
             </ul>
           </div>
 
-          <div className="react_icon-hamburger" onClick={toggleMenu}>
-            <div className="icon">
-              {isOpen ? (
-                <HiOutlineMenuAlt3 />
-              ) : (
-                <div
-                  className={`list-ttr ${isOpen ? "slide-in" : "slide-out"}`}
-                >
-                  <div className="close-icon">
-                    <AiOutlineClose />
-                  </div>
+          <div className={`menu_dropdown ${isOpen ? "open" : ""}`}>
+            {isOpen && (
+              <div>
+                <div className="close-icon" onClick={toggleMenu}>
+                  <AiOutlineClose />
+                </div>
 
+                <div>
                   <ul className="flex gap-10 items-center font-semibold">
                     <li className="">
                       <Link to="/">Home</Link>
@@ -75,8 +82,8 @@ const Services = () => {
                     </li>
                   </ul>
                 </div>
-              )}
-            </div>
+              </div>
+            )}
           </div>
         </header>
 
@@ -165,7 +172,7 @@ const Services = () => {
 
         <div className="solutions-cases">
           <div className="headies">
-            <h1>EDS STANDARD PLATFORM SOLUTION</h1>
+            <h1>EDS Standard Platform Solution</h1>
           </div>
 
           <div className="license-cases">
@@ -198,88 +205,88 @@ const Services = () => {
         <div className="structure">
           <h1>PERPETUAL LICENSE STRUCTURE</h1>
         </div>
-        <table class="rwd-table">
+        <table className="rwd-table">
           <tbody>
-          <tr>
-            <th>MODULES</th>
-            <th>USER</th>
-            <th>INDUSTRY</th>
-          </tr>
-          <tr>
-            <td>Automated UW</td>
-            <td>Insurer</td>
-            <td>Life & General</td>
-          </tr>
-          <tr>
-            <td>Digital Claims Management</td>
-            <td>Insurer</td>
-            <td>General</td>
-          </tr>
-          <tr>
-            <td>Digital Claims Management</td>
-            <td>Insurer</td>
-            <td>Life</td>
-          </tr>
-          <tr>
-            <td>Agent Management</td>
-            <td>Insurer</td>
-            <td>General</td>
-          </tr>
-          <tr>
-            <td>Agent Management</td>
-            <td>Insurer</td>
-            <td>Life</td>
-          </tr>
-          <tr>
-            <td>Group UW</td>
-            <td>Insurer</td>
-            <td>General</td>
-          </tr>
-          <tr>
-            <td>Group UW</td>
-            <td>Insurer</td>
-            <td>Life</td>
-          </tr>
-          <tr>
-            <td>Renewal Management</td>
-            <td>Insurer</td>
-            <td>General</td>
-          </tr>
-          <tr>
-            <td>Policy Servicing</td>
-            <td>Insurer</td>
-            <td>Life&General</td>
-          </tr>
-          <tr>
-            <td>Policy Management</td>
-            <td>Insurer</td>
-            <td>Life&General</td>
-          </tr>
-          <tr>
-            <td>Policy Management</td>
-            <td>Insurer</td>
-            <td>Life</td>
-          </tr>
-          <tr>
-            <td>Digital Claims Management</td>
-            <td>Insurer</td>
-            <td>General</td>
-          </tr>
-          <tr>
-            <td>Motor Telematics</td>
-            <td>Insurer</td>
-            <td>General</td>
-          </tr>
-          <tr>
-            <td>Wellness Program</td>
-            <td>Insurer</td>
-            <td>Life</td>
-          </tr>
+            <tr>
+              <th>MODULES</th>
+              <th>USER</th>
+              <th>INDUSTRY</th>
+            </tr>
+            <tr>
+              <td>Automated UW</td>
+              <td>Insurer</td>
+              <td>Life & General</td>
+            </tr>
+            <tr>
+              <td>Digital Claims Management</td>
+              <td>Insurer</td>
+              <td>General</td>
+            </tr>
+            <tr>
+              <td>Digital Claims Management</td>
+              <td>Insurer</td>
+              <td>Life</td>
+            </tr>
+            <tr>
+              <td>Agent Management</td>
+              <td>Insurer</td>
+              <td>General</td>
+            </tr>
+            <tr>
+              <td>Agent Management</td>
+              <td>Insurer</td>
+              <td>Life</td>
+            </tr>
+            <tr>
+              <td>Group UW</td>
+              <td>Insurer</td>
+              <td>General</td>
+            </tr>
+            <tr>
+              <td>Group UW</td>
+              <td>Insurer</td>
+              <td>Life</td>
+            </tr>
+            <tr>
+              <td>Renewal Management</td>
+              <td>Insurer</td>
+              <td>General</td>
+            </tr>
+            <tr>
+              <td>Policy Servicing</td>
+              <td>Insurer</td>
+              <td>Life&General</td>
+            </tr>
+            <tr>
+              <td>Policy Management</td>
+              <td>Insurer</td>
+              <td>Life&General</td>
+            </tr>
+            <tr>
+              <td>Policy Management</td>
+              <td>Insurer</td>
+              <td>Life</td>
+            </tr>
+            <tr>
+              <td>Digital Claims Management</td>
+              <td>Insurer</td>
+              <td>General</td>
+            </tr>
+            <tr>
+              <td>Motor Telematics</td>
+              <td>Insurer</td>
+              <td>General</td>
+            </tr>
+            <tr>
+              <td>Wellness Program</td>
+              <td>Insurer</td>
+              <td>Life</td>
+            </tr>
           </tbody>
         </table>
       </div>
 
-{/* 
+      {/* 
       <div class="table-service-container">
 <h1>Responsive Table</h1>
   <table class="rwd-table">
@@ -403,20 +410,20 @@ const Services = () => {
           <div className="links_footer">
             <div className="first-link mr-2 mt-1.5">
               <ul>
-                <li>
-                  <Link>Home</Link>
+                <li className="">
+                  <Link to="/">Home</Link>
                 </li>
-                <li>
-                  <Link>About Us</Link>
+                <li className="">
+                  <Link to="/about">About</Link>
                 </li>
-                <li>
-                  <Link>Services</Link>
+                <li className="">
+                  <Link to="/services">Services</Link>
                 </li>
-                <li>
-                  <Link>Contact Us</Link>
+                <li className="">
+                  <Link to="/contact">Contact</Link>
                 </li>
-                <li>
-                  <Link>
+                <li className="">
+                  <Link to="/quotes">
                     <button>Get Quote</button>
                   </Link>
                 </li>

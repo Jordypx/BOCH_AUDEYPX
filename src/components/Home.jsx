@@ -14,12 +14,24 @@ const Home = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <div>
-      <div className={`header_bg ${isOpen ? "menu-open" : ""}`}>
-        <header className="flex justify-between gap-5 items-center p-5">
-          <div className="embed">
-            <h1 className=" logo text-lg font-semibold">Embed Digital</h1>
+      <div className="header_bg">
+        <header className="flex justify-between p-4 items-center">
+          <div className="embed flex">
+            <Link to="/">
+              <h1 className=" logo text-lg font-semibold">Embed Digital</h1>
+            </Link>
+          </div>
+
+          <div className="icon">
+            <div
+              className={`hamicon ${isOpen ? "hide" : ""}`}
+              onClick={toggleMenu}
+            >
+              <HiOutlineMenuAlt3 />
+            </div>
           </div>
 
           <div className="list-menu-II">
@@ -44,18 +56,14 @@ const Home = () => {
             </ul>
           </div>
 
-          <div className="react_icon-hamburger" onClick={toggleMenu}>
-            <div className="icon">
-              {isOpen ? (
-                <HiOutlineMenuAlt3 />
-              ) : (
-                <div
-                  className={`list-ttr ${isOpen ? "slide-in" : "slide-out"}`}
-                >
-                  <div className="close-icon">
-                    <AiOutlineClose />
-                  </div>
+          <div className={`menu_dropdown ${isOpen ? "open" : ""}`}>
+            {isOpen && (
+              <div>
+                <div className="close-icon" onClick={toggleMenu}>
+                  <AiOutlineClose />
+                </div>
 
+                <div>
                   <ul className="flex gap-10 items-center font-semibold">
                     <li className="">
                       <Link to="/">Home</Link>
@@ -76,8 +84,8 @@ const Home = () => {
                     </li>
                   </ul>
                 </div>
-              )}
-            </div>
+              </div>
+            )}
           </div>
         </header>
 
@@ -93,8 +101,8 @@ const Home = () => {
                   Embed Digital Solutions (EDS) deploys Digital Insurance
                   solutions to deliver a competitive advantage within the
                   insurance and health services value chain, by taking into
-                  account the needs of every stakeholder within the Ecosystem. Our
-                  cooperate Objective is to democratise access to affordable
+                  account the needs of every stakeholder within the Ecosystem.
+                  Our cooperate Objective is to democratise access to affordable
                   digital platforms for optimized financial performance for the
                   benefit of all stakeholders.
                 </p>
@@ -117,7 +125,7 @@ const Home = () => {
       <div className="it-solutions_s">
         <div className="text-flex-lonf">
           <div className="solutions_imgs_text">
-            <h1 className="">DIGITAL SOLUTIONS ON ONE PLATFORM</h1>
+            <h1 className="">Digital Solutions On One Platform</h1>
 
             <p>
               Our low code and prepackaged platform is designed to ensure
@@ -172,101 +180,150 @@ const Home = () => {
       </div>
       <div className="table-section">
         <div className="head-text-servies">
-          <h1>Our Platform Solution
-          </h1>
+          <h1>Our Platform Solution</h1>
         </div>
 
-        <table class="pricing-table">
-          <tbody><tr>
-            <td width="30%" class="pricing-table-text">
-              <h2>Select the package that best suits your needs.</h2>
-
-            </td>
-            <td class="bg-td" width="20%">
-              <div class="pricing-table-item">
-                <div class="pricing-table-item-head">
-                  <p>Lite Essential</p>
+        <table className="pricing-table">
+          <tbody>
+            <tr>
+              <td width="30%" className="pricing-table-text">
+                <h2>Select the package that best suits your needs.</h2>
+              </td>
+              <td className="bg-td" width="20%">
+                <div className="pricing-table-item">
+                  <div className="pricing-table-item-head">
+                    <p>Lite Essential</p>
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td class="bg-td" width="20%">
-              <div class="pricing-table-item">
-                <div class="pricing-table-item-head">
-                  <p>Lite Pro</p>
+              </td>
+              <td className="bg-td" width="20%">
+                <div className="pricing-table-item">
+                  <div className="pricing-table-item-head">
+                    <p>Lite Pro</p>
+                  </div>
                 </div>
-              </div>
-            </td>
-          </tr>
+              </td>
+            </tr>
 
-            <tr class="pricing-table-list">
+            <tr className="pricing-table-list">
               <td>Digital Quotations & Illustrations</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
-              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+              <td>
+                <span className="glyphicon glyphicon-ok"> &#10004;</span>
+              </td>
+              <td>
+                <span className="glyphicon glyphicon-ok">&#10004;</span>
+              </td>
             </tr>
-            <tr class="pricing-table-list">
+            <tr className="pricing-table-list">
               <td>Individual Retail Business</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
-              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
-
+              <td>
+                <span className="glyphicon glyphicon-ok"> &#10004;</span>
+              </td>
+              <td>
+                <span className="glyphicon glyphicon-ok">&#10004;</span>
+              </td>
             </tr>
-            <tr class="pricing-table-list">
+            <tr className="pricing-table-list">
               <td>Policy Acquisition</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
-              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
-
+              <td>
+                <span className="glyphicon glyphicon-ok"> &#10004;</span>
+              </td>
+              <td>
+                <span className="glyphicon glyphicon-ok">&#10004;</span>
+              </td>
             </tr>
-            <tr class="pricing-table-list">
+            <tr className="pricing-table-list">
               <td>Abandoned Cart</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
-              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
-
+              <td>
+                <span className="glyphicon glyphicon-ok"> &#10004;</span>
+              </td>
+              <td>
+                <span className="glyphicon glyphicon-ok">&#10004;</span>
+              </td>
             </tr>
-            <tr class="pricing-table-list">
+            <tr className="pricing-table-list">
               <td>Document Uploads & View</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
-              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+              <td>
+                <span className="glyphicon glyphicon-ok"> &#10004;</span>
+              </td>
+              <td>
+                <span className="glyphicon glyphicon-ok">&#10004;</span>
+              </td>
             </tr>
-            <tr class="pricing-table-list">
+            <tr className="pricing-table-list">
               <td>Online Policy Issuance</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
-              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+              <td>
+                <span className="glyphicon glyphicon-ok"> &#10004;</span>
+              </td>
+              <td>
+                <span className="glyphicon glyphicon-ok">&#10004;</span>
+              </td>
             </tr>
-            <tr class="pricing-table-list">
+            <tr className="pricing-table-list">
               <td>Basic Renewal Underwriting</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
-              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+              <td>
+                <span className="glyphicon glyphicon-ok"> &#10060;</span>
+              </td>
+              <td>
+                <span className="glyphicon glyphicon-ok">&#10004;</span>
+              </td>
             </tr>
-            <tr class="pricing-table-list">
+            <tr className="pricing-table-list">
               <td>Multiple Notifications</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
-              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+              <td>
+                <span className="glyphicon glyphicon-ok"> &#10004;</span>
+              </td>
+              <td>
+                <span className="glyphicon glyphicon-ok">&#10004;</span>
+              </td>
             </tr>
-            <tr class="pricing-table-list">
+            <tr className="pricing-table-list">
               <td>Endorsements Non-Financial</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
-              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+              <td>
+                <span className="glyphicon glyphicon-ok"> &#10004;</span>
+              </td>
+              <td>
+                <span className="glyphicon glyphicon-ok">&#10004;</span>
+              </td>
             </tr>
-            <tr class="pricing-table-list">
+            <tr className="pricing-table-list">
               <td>Customer Complaints And Feedback</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
-              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+              <td>
+                <span className="glyphicon glyphicon-ok"> &#10004;</span>
+              </td>
+              <td>
+                <span className="glyphicon glyphicon-ok">&#10004;</span>
+              </td>
             </tr>
-            <tr class="pricing-table-list">
+            <tr className="pricing-table-list">
               <td>Claims FNOL</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
-              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+              <td>
+                <span className="glyphicon glyphicon-ok"> &#10004;</span>
+              </td>
+              <td>
+                <span className="glyphicon glyphicon-ok">&#10004;</span>
+              </td>
             </tr>
-            <tr class="pricing-table-list">
+            <tr className="pricing-table-list">
               <td>Claims Surveys</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10060;</span></td>
-              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+              <td>
+                <span className="glyphicon glyphicon-ok"> &#10060;</span>
+              </td>
+              <td>
+                <span className="glyphicon glyphicon-ok">&#10004;</span>
+              </td>
             </tr>
-            <tr class="pricing-table-list">
+            <tr className="pricing-table-list">
               <td>Business Reporting & Analytics</td>
-              <td><span class="glyphicon glyphicon-ok">	&#10004;</span></td>
-              <td><span class="glyphicon glyphicon-ok">&#10004;</span></td>
+              <td>
+                <span className="glyphicon glyphicon-ok"> &#10004;</span>
+              </td>
+              <td>
+                <span className="glyphicon glyphicon-ok">&#10004;</span>
+              </td>
             </tr>
-          </tbody></table>
+          </tbody>
+        </table>
       </div>
 
       <footer>
@@ -296,20 +353,20 @@ const Home = () => {
           <div className="links_footer">
             <div className="first-link mr-2 mt-1.5">
               <ul>
-                <li>
-                  <Link>Home</Link>
+                <li className="">
+                  <Link to="/">Home</Link>
                 </li>
-                <li>
-                  <Link>About Us</Link>
+                <li className="">
+                  <Link to="/about">About</Link>
                 </li>
-                <li>
-                  <Link>Services</Link>
+                <li className="">
+                  <Link to="/services">Services</Link>
                 </li>
-                <li>
-                  <Link>Contact Us</Link>
+                <li className="">
+                  <Link to="/contact">Contact</Link>
                 </li>
-                <li>
-                  <Link>
+                <li className="">
+                  <Link to="/quotes">
                     <button>Get Quote</button>
                   </Link>
                 </li>

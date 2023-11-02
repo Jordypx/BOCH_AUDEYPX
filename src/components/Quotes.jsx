@@ -15,10 +15,21 @@ const Quotes = () => {
   };
   return (
     <div>
-      <div className={`header_bg ${isOpen ? "menu-open" : ""}`}>
-        <header className="flex justify-between gap-5 items-center p-5">
-          <div className="embed">
-            <h1 className="text-lg font-semibold">Embed Digital</h1>
+      <div className="header_bg">
+        <header className="flex justify-between p-4 items-center">
+          <div className="embed flex">
+            <Link to="/">
+              <h1 className=" logo text-lg font-semibold">Embed Digital</h1>
+            </Link>
+          </div>
+
+          <div className="icon">
+            <div
+              className={`hamicon ${isOpen ? "hide" : ""}`}
+              onClick={toggleMenu}
+            >
+              <HiOutlineMenuAlt3 />
+            </div>
           </div>
 
           <div className="list-menu-II">
@@ -43,18 +54,14 @@ const Quotes = () => {
             </ul>
           </div>
 
-          <div className="react_icon-hamburger" onClick={toggleMenu}>
-            <div className="icon">
-              {isOpen ? (
-                <HiOutlineMenuAlt3 />
-              ) : (
-                <div
-                  className={`list-ttr ${isOpen ? "slide-in" : "slide-out"}`}
-                >
-                  <div className="close-icon">
-                    <AiOutlineClose />
-                  </div>
+          <div className={`menu_dropdown ${isOpen ? "open" : ""}`}>
+            {isOpen && (
+              <div>
+                <div className="close-icon" onClick={toggleMenu}>
+                  <AiOutlineClose />
+                </div>
 
+                <div>
                   <ul className="flex gap-10 items-center font-semibold">
                     <li className="">
                       <Link to="/">Home</Link>
@@ -75,33 +82,65 @@ const Quotes = () => {
                     </li>
                   </ul>
                 </div>
-              )}
-            </div>
+              </div>
+            )}
           </div>
         </header>
       </div>
       <div className="quote-body">
-        <div class="quote-container">
+        <div className="quote-container">
           <form id="contact" action="" method="post">
             <h3>Contact us for custom quote</h3>
             <h4>Please input details below</h4>
             <fieldset>
-              <input placeholder="Your name" type="text" tabindex="1" required autofocus />
+              <input
+                placeholder="Your name"
+                type="text"
+                tabIndex="1"
+                required
+                autoFocus
+              />
             </fieldset>
             <fieldset>
-              <input placeholder="Your Email Address" type="email" tabindex="2" required />
+              <input
+                placeholder="Your Email Address"
+                type="email"
+                tabIndex="2"
+                required
+              />
             </fieldset>
             <fieldset>
-              <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required />
+              <input
+                placeholder="Your Phone Number (optional)"
+                type="tel"
+                tabIndex="3"
+                required
+              />
             </fieldset>
             <fieldset>
-              <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required />
+              <input
+                placeholder="Your Web Site (optional)"
+                type="url"
+                tabIndex="4"
+                required
+              />
             </fieldset>
             <fieldset>
-              <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+              <textarea
+                placeholder="Type your message here...."
+                tabIndex="5"
+                required
+              ></textarea>
             </fieldset>
             <fieldset>
-              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+              <button
+                name="submit"
+                type="submit"
+                id="contact-submit"
+                data-submit="...Sending"
+              >
+                Submit
+              </button>
             </fieldset>
           </form>
         </div>
@@ -133,20 +172,20 @@ const Quotes = () => {
           <div className="links_footer">
             <div className="first-link mr-2 mt-1.5">
               <ul>
-                <li>
-                  <Link>Home</Link>
+                <li className="">
+                  <Link to="/">Home</Link>
                 </li>
-                <li>
-                  <Link>About Us</Link>
+                <li className="">
+                  <Link to="/about">About</Link>
                 </li>
-                <li>
-                  <Link>Services</Link>
+                <li className="">
+                  <Link to="/services">Services</Link>
                 </li>
-                <li>
-                  <Link>Contact Us</Link>
+                <li className="">
+                  <Link to="/contact">Contact</Link>
                 </li>
-                <li>
-                  <Link>
+                <li className="">
+                  <Link to="/quotes">
                     <button>Get Quote</button>
                   </Link>
                 </li>
