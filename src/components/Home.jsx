@@ -109,7 +109,7 @@ const Home = () => {
               </div>
 
               <div className="hero-btn">
-                <button>Consult now</button>
+                <button>Contact US</button>
               </div>
             </div>
 
@@ -136,7 +136,7 @@ const Home = () => {
             </p>
 
             <div className="hero-btn mt-4">
-              <button>Consult now</button>
+              <button> Get a Quote</button>
             </div>
           </div>
 
