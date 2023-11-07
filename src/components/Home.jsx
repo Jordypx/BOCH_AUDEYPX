@@ -131,6 +131,9 @@ const Home = () => {
               these solutions.
             </p>
 
+            <div className="hero-btn mt-4">
+              <button> Get a Quote</button>
+            </div>
             {/* <div className="hero-btn mt-4">
               <Link to="/contact">
                 <button>consult now</button>
