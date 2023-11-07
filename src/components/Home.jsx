@@ -326,8 +326,9 @@ const Home = () => {
         <div className="flex justify-between">
           <div className="">
             <div className="logo-head">
-              <h1>Embed Digital</h1>
-
+              <Link to="/">
+                <h1>Embed Digital</h1>
+              </Link>
               <p></p>
             </div>
             <div className="icons">
