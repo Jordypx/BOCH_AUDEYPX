@@ -18,12 +18,12 @@ const Home = () => {
   return (
     <div>
       <div className="header_bg">
-        <header className="flex justify-between p-4 items-center">
-          <div className="embed flex">
-            <h1 className="logo text-lg font-semibold">
-              <Link to="/"> Embed Digital </Link>
-            </h1>
-          </div>
+        <div className="flex justify-between p-4 items-center">
+          <header className="logo text-lg font-semibold">
+            <Link to="/">
+              <h1>Embed Digital</h1>
+            </Link>
+          </header>
 
           <div className="icon">
             <div
@@ -87,7 +87,7 @@ const Home = () => {
               </div>
             )}
           </div>
-        </header>
+        </div>
 
         <div className="hero-image">
           <div className="explore_companies_way">
@@ -371,6 +371,12 @@ const Home = () => {
           </div>
         </div>
       </footer>
+
+      <header className="">
+        <Link to="/">
+          <h1>Embed Digital</h1>
+        </Link>
+      </header>
     </div>
   );
 };

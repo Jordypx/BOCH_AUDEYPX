@@ -20,17 +20,11 @@ body {
   overflow: hidden;
 }
 
-/* .menu-open {
-  width: 100%;
-} */
-
-header .embed {
-  cursor: pointer;
-}
-
-header .embed h1 {
+header h1 {
   color: #ffa500;
   margin-top: 0.8rem;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .menu_dropdown {
@@ -1185,9 +1179,10 @@ fieldset {
     line-height: 26px;
   }
 
-  /* .text_explorer .hero-btn button {
-    width: 10%;
-  } */
+  .text_explorer .changed_btn .btn_click {
+    width: 30%;
+    cursor: pointer;
+  }
 
   .text-flex-lonf {
     margin-top: 8%;
@@ -1259,10 +1254,10 @@ fieldset {
 }
 
 @media screen and (min-width: 1024px) {
-  /* .text_explorer .hero-btn .click_btn {
-    width: 14%;
+  .text_explorer .changed_btn .btn_click {
+    width: 28%;
     cursor: pointer;
-  } */
+  }
 
   .text-flex-lonf {
     margin-top: 8%;
