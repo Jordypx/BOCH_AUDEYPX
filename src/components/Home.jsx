@@ -110,7 +110,7 @@ const Home = () => {
 
               <div className="changed_btn mt-4">
                 <Link to="/contact">
-                  <button className="btn_click">contact us</button>
+                  <button className="btn_click">Contact Us</button>
                 </Link>
               </div>
             </div>
