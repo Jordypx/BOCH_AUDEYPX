@@ -1255,7 +1255,7 @@ fieldset {
 
 @media screen and (min-width: 1024px) {
   .text_explorer .changed_btn .btn_click {
-    width: 28%;
+    width: 20%;
     cursor: pointer;
   }
 
