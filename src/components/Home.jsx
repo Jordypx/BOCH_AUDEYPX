@@ -122,7 +122,6 @@ const Home = () => {
         <div className="text-flex-lonf">
           <div className="solutions_imgs_text">
             <h1 className="">Digital Solutions On One Platform</h1>
-
             <p>
               Our low code and prepackaged platform is designed to ensure
               standard day-to-day <br /> insurance operations seamlessly. With
@@ -130,15 +129,11 @@ const Home = () => {
               faster time-to-value by reducing the implementation time with
               these solutions.
             </p>
-
             <div className="hero-btn mt-4">
-              <button> Get a Quote</button>
-            </div>
-            {/* <div className="hero-btn mt-4">
-              <Link to="/contact">
-                <button>consult now</button>
+              <Link to="/quotes">
+                <button>Get Quote</button>
               </Link>
-            </div> */}
+            </div>
           </div>
 
           <div className="solutions_img">
