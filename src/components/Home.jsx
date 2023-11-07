@@ -20,9 +20,9 @@ const Home = () => {
       <div className="header_bg">
         <header className="flex justify-between p-4 items-center">
           <div className="embed flex">
-            <Link to="/">
-              <h1 className=" logo text-lg font-semibold">Embed Digital</h1>
-            </Link>
+            <h1 className="logo text-lg font-semibold">
+              <Link to="/"> Embed Digital </Link>
+            </h1>
           </div>
 
           <div className="icon">
@@ -108,16 +108,12 @@ const Home = () => {
                 </p>
               </div>
 
-              <div className="hero-btn">
-                <button>Consult now</button>
+              <div className="changed_btn mt-4">
+                <Link to="/contact">
+                  <button className="btn_click">consult now</button>
+                </Link>
               </div>
             </div>
-
-            {/* <div className="img-home-progress">
-            <div className="desk">
-              <img src="../cyber101 (1).png" alt="cyber" />
-            </div>
-          </div> */}
           </div>
         </div>
       </div>
@@ -135,9 +131,11 @@ const Home = () => {
               these solutions.
             </p>
 
-            <div className="hero-btn mt-4">
-              <button>Consult now</button>
-            </div>
+            {/* <div className="hero-btn mt-4">
+              <Link to="/contact">
+                <button>consult now</button>
+              </Link>
+            </div> */}
           </div>
 
           <div className="solutions_img">

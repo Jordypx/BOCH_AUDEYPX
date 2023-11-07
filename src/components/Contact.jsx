@@ -10,8 +10,43 @@ import { FaTwitter } from "react-icons/fa";
 const Contact = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost:5000/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.status === 200) {
+        console.log("Email sent successfully");
+        // You can display a success message to the user here.
+      } else {
+        console.error("Error sending the email");
+        // You can display an error message to the user here.
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      // Handle network errors here.
+    }
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   return (
     <div>
@@ -98,15 +133,24 @@ const Contact = () => {
           </div>
 
           <div className="contact-display">
-            <form>
+            <form onSubmit={handleSubmit}>
               <input
                 placeholder="your email address"
                 type="email"
                 name="email"
+                onChange={handleChange}
+                value={formData.email}
                 required
               />
 
-              <input type="text" placeholder="your name" />
+              <input
+                type="text"
+                name="name"
+                placeholder="your name"
+                onChange={handleChange}
+                value={formData.name}
+                required
+              />
 
               <textarea
                 id="message"
@@ -114,9 +158,14 @@ const Contact = () => {
                 rows="4"
                 cols="50"
                 placeholder="your message"
+                onChange={handleChange}
+                value={formData.message}
+                required
               />
 
-              <button>Send Message</button>
+              <div className="btn-message">
+                <button type="submit">Send Message</button>
+              </div>
             </form>
           </div>
         </div>

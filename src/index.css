@@ -24,10 +24,13 @@ body {
   width: 100%;
 } */
 
+header .embed {
+  cursor: pointer;
+}
+
 header .embed h1 {
   color: #ffa500;
   margin-top: 0.8rem;
-  cursor: pointer;
 }
 
 .menu_dropdown {
@@ -117,27 +120,16 @@ header .embed h1 {
   line-height: 20px;
 }
 
-.text_explorer .hero-btn button {
+.text_explorer .changed_btn .btn_click {
   background: linear-gradient(to right, #fd7702, #ff8e00);
   color: #fff;
   padding: 0.4rem;
   font-size: 0.8rem;
   margin-top: 1rem;
   font-weight: bold;
-  width: 32%;
-  cursor: pointer;
+  width: 72%;
   border-radius: 0.3rem;
   letter-spacing: 0.7px;
-}
-
-.img-home-progress .desk {
-  width: 110%;
-  margin-left: -1.5rem;
-}
-
-.text_explorer .hero-btn button .img-home-progress .desk img {
-  width: 100%;
-  filter: brightness(0.9) contrast(2) blur(0);
 }
 
 .it-solutions_s {
@@ -597,18 +589,20 @@ form textarea {
   margin-top: 1.7rem;
 }
 
-form button {
-  /* background: linear-gradient(to right, #01a3f8, #0078f9); */
+form .btn-message {
+  cursor: pointer;
+  margin-top: 1.9rem;
+  margin-bottom: 7rem;
+}
+
+form .btn-message button {
   background: linear-gradient(to right, #fd7702, #ff8e00);
   color: #fff;
   padding: 0.7rem;
   font-size: 0.8rem;
-  margin-top: 1.9rem;
-  width: 42%;
-  cursor: pointer;
+  width: 35%;
   border-radius: 0.3rem;
   letter-spacing: 0.7px;
-  margin-bottom: 7rem;
 }
 
 /* ----QUOTE---- */
@@ -818,9 +812,9 @@ fieldset {
     top: -16%;
   }
 
-  .text_explorer .hero-btn button {
+  /* .text_explorer .hero-btn button {
     width: 15%;
-  }
+  } */
 
   header .embed h1 {
     margin-left: 4rem;
@@ -1172,6 +1166,7 @@ fieldset {
   }
   body {
     width: 100%;
+    height: 100%;
   }
 
   .list-menu-II {
@@ -1190,9 +1185,9 @@ fieldset {
     line-height: 26px;
   }
 
-  .text_explorer .hero-btn button {
-    width: 20%;
-  }
+  /* .text_explorer .hero-btn button {
+    width: 10%;
+  } */
 
   .text-flex-lonf {
     margin-top: 8%;
@@ -1252,9 +1247,10 @@ fieldset {
     width: 70%;
   }
 
-  form button {
-    width: 20%;
-    margin-left: 1%;
+  form .btn-message button {
+    width: 29%;
+    margin-left: -6%;
+    cursor: pointer;
   }
 
   .quote-container {
@@ -1263,10 +1259,10 @@ fieldset {
 }
 
 @media screen and (min-width: 1024px) {
-  .text_explorer .hero-btn button {
-    width: 15%;
+  /* .text_explorer .hero-btn .click_btn {
+    width: 14%;
     cursor: pointer;
-  }
+  } */
 
   .text-flex-lonf {
     margin-top: 8%;
@@ -1313,9 +1309,9 @@ fieldset {
     width: 48%;
   }
 
-  form button {
-    width: 10%;
-    margin-left: -9%;
+  form .btn-message button {
+    width: 28%;
+    margin-left: -13%;
   }
 
   .quote-container {

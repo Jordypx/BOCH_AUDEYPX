@@ -18,7 +18,7 @@ const Quotes = () => {
       <div className="header_bg">
         <header className="flex justify-between p-4 items-center">
           <div className="embed flex">
-            <Link to="/">
+            <Link to="">
               <h1 className=" logo text-lg font-semibold">Embed Digital</h1>
             </Link>
           </div>
