@@ -21,7 +21,7 @@ const Home = () => {
         <div className="flex justify-between p-4 items-center">
           <header className="logo text-lg font-semibold">
             <Link to="/">
-              <h1>Embed Digital</h1>
+              <h1 className=" logo text-lg font-semibold" >Embed Digital</h1>
             </Link>
           </header>
 
