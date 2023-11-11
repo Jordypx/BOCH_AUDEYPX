@@ -16,12 +16,12 @@ const Services = () => {
   return (
     <div>
       <div className="header_bg">
-        <header className="flex justify-between p-4 items-center">
-          <div className="embed flex">
+        <div className="flex justify-between p-4 items-center">
+          <header className="logo text-lg font-semibold">
             <Link to="/">
-              <h1 className=" logo text-lg font-semibold">Embed Digital</h1>
+              <h1>Embed Digital</h1>
             </Link>
-          </div>
+          </header>
 
           <div className="icon">
             <div
@@ -85,7 +85,7 @@ const Services = () => {
               </div>
             )}
           </div>
-        </header>
+        </div>
 
         <div className="key-features-pa">
           <div className="head">

@@ -14,18 +14,41 @@ body {
 }
 
 .header_bg {
-  background: linear-gradient(to right, #112847, #0f4068);
-  transition: width 0.5s;
-  /* Add animation to menu sliding */
+  width: 100%;
   overflow: hidden;
+  background: linear-gradient(to right, #112847, #0f4068);
+}
+
+header {
+  cursor: pointer;
 }
 
 header h1 {
   color: #ffa500;
   margin-top: 0.8rem;
   font-size: 1.5rem;
-  cursor: pointer;
+  font-weight: 600;
 }
+
+/* .menu_dropdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #07101f;
+  width: 80%;
+  height: 100%;
+  padding: 3rem;
+  opacity: 0;
+  transform: translatex(-30%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.menu_dropdown.open {
+  opacity: 1;
+  transform: translatex(0%);
+  transition: opacity 0.4s ease-in, transform 0.3s ease-in-out;
+} */
 
 .menu_dropdown {
   position: absolute;
@@ -37,32 +60,18 @@ header h1 {
   height: 100%;
   padding: 3rem;
   opacity: 0;
-  transform: translatex(-30%); /* Move the content up slightly */
+  transform: translateX(-100%);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .menu_dropdown.open {
   opacity: 1;
-  transform: translatex(0%);
-  transition: opacity 0.4s ease-in, transform 0.3s ease-in-out;
+  transform: translateX(0);
 }
 
 .hamicon.hide {
   visibility: hidden;
 }
-
-/* .list-ttr {
-  position: absolute;
-  top: 0%;
-  width: 80%;
-  height: 100%;
-  z-index: 1;
-  right: 0%;
-  background-color: #07101f;
-  padding: 3rem;
-  transition: transform 5s;
-  transform: translateX(-30%);
-} */
 
 .menu_dropdown ul {
   color: #fff;
@@ -121,7 +130,7 @@ header h1 {
   font-size: 0.8rem;
   margin-top: 1rem;
   font-weight: bold;
-  width: 72%;
+  width: 32%;
   border-radius: 0.3rem;
   letter-spacing: 0.7px;
 }
@@ -1164,7 +1173,7 @@ fieldset {
   }
 
   .list-menu-II {
-    margin-right: -0.4rem;
+    margin-right: 0.8rem;
   }
 
   header .embed h1 {
@@ -1289,11 +1298,19 @@ fieldset {
   }
 
   .solutions_imgs_text .hero-btn button {
-    width: 20%;
+    width: 27%;
+  }
+
+  .text_explorer .changed_btn .btn_click {
+    width: 24%;
   }
 
   .license-cases {
-    margin-left: 30%;
+    margin-left: 25%;
+  }
+
+  .list-menu-II {
+    margin-right: 0.8rem;
   }
 
   form input {
@@ -1306,11 +1323,22 @@ fieldset {
 
   form .btn-message button {
     width: 28%;
-    margin-left: -13%;
+    margin-left: 1%;
   }
 
   .quote-container {
     max-width: 40%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  form .btn-message button {
+    width: 28%;
+    margin-left: -11%;
+  }
+
+  .license-cases {
+    margin-left: 30%;
   }
 }
 
