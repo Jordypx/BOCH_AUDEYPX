@@ -20,7 +20,9 @@ const Home = () => {
       <div className="header_bg">
         <div className="flex justify-between p-4 items-center">
           <header className="logo text-lg font-semibold">
-            <h1>Embed Digital</h1>
+            <Link to="/">
+              <h1 className=" logo text-lg font-semibold">Embed Digital</h1>
+            </Link>
           </header>
 
           <div className="icon">
@@ -108,7 +110,7 @@ const Home = () => {
 
               <div className="changed_btn mt-4">
                 <Link to="/contact">
-                  <button className="btn_click">contact us</button>
+                  <button className="btn_click">Contact Us</button>
                 </Link>
               </div>
             </div>
@@ -324,8 +326,9 @@ const Home = () => {
         <div className="flex justify-between">
           <div className="">
             <div className="logo-head">
-              <h1>Embed Digital</h1>
-
+              <Link to="/">
+                <h1>Embed Digital</h1>
+              </Link>
               <p></p>
             </div>
             <div className="icons">
