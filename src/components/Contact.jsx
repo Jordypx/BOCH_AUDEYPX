@@ -16,6 +16,8 @@ const Contact = () => {
     message: "",
   });
 
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -23,18 +25,32 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // After successful submission, reset form fields
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+      // other form fields
+    });
+
     try {
-      const response = await fetch("http://localhost:5000/sendEmail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://embedigital.com.ng/api/user/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (response.status === 200) {
-        console.log("Email sent successfully");
+        setIsFormSubmitted(true);
         // You can display a success message to the user here.
+        setTimeout(() => {
+          setIsFormSubmitted(false);
+        }, 3000);
       } else {
         console.error("Error sending the email");
         // You can display an error message to the user here.
@@ -46,7 +62,11 @@ const Contact = () => {
   };
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
   };
   return (
     <div>
@@ -133,6 +153,11 @@ const Contact = () => {
           </div>
 
           <div className="contact-display">
+            {isFormSubmitted && (
+              <p className="text-xl text-center text-white font-bold">
+                Mail has been successfully sent!
+              </p>
+            )}
             <form onSubmit={handleSubmit}>
               <input
                 placeholder="your email address"
