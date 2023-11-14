@@ -195,26 +195,35 @@ const Contact = () => {
           </div>
         </div>
 
-<div className="contact-card">
-  <div className="cntct-crd">
-    <div className="cntct-crd-icon"><img src="../Location.png" alt="" srcset="" /></div>
-    <div className="cntct-crd-head">Address:</div>
-    <div className="cntct-crd-text">16, Boyle Street, Onikan, Lagos.</div>
-  </div>
+        <div className="contact-card">
+          <div className="cntct-crd">
+            <div className="cntct-crd-icon">
+              <img src="../Location.png" alt="" />
+            </div>
+            <div className="cntct-crd-head">Address:</div>
+            <div className="cntct-crd-text">
+              16, Boyle Street, Onikan, Lagos.
+            </div>
+          </div>
 
-  <div className="cntct-crd">
-    <div className="cntct-crd-icon"><img src="../Phone.png" alt="" srcset="" /></div>
-    <div className="cntct-crd-head">Phone:</div>
-    <div className="cntct-crd-text">+2348037861308</div>
-  </div>
+          <div className="cntct-crd">
+            <div className="cntct-crd-icon">
+              <img src="../Phone.png" alt="" />
+            </div>
+            <div className="cntct-crd-head">Phone:</div>
+            <div className="cntct-crd-text">+2348037861308</div>
+          </div>
 
-  <div className="cntct-crd">
-    <div className="cntct-crd-icon"><img src="../email.png" alt="" srcset="" /></div>
-    <div className="cntct-crd-head">Email:</div>
-    <div className="cntct-crd-text"><a href="mailto:">info@embedigital.com.ng</a></div>
-  </div>
-</div>
-        
+          <div className="cntct-crd">
+            <div className="cntct-crd-icon">
+              <img src="../email.png" alt="" />
+            </div>
+            <div className="cntct-crd-head">Email:</div>
+            <div className="cntct-crd-text">
+              <a href="mailto:">info@embedigital.com.ng</a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <footer>

@@ -39,7 +39,7 @@ const Quotes = () => {
 
     try {
       const response = await fetch(
-        "https://embedigital.com.ng/api/custom/getquotes",
+        "http://localhost:5000/api/custom/getquotes",
         {
           method: "POST",
           headers: {
