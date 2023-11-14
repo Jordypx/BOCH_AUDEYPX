@@ -197,19 +197,19 @@ const Contact = () => {
 
 <div className="contact-card">
   <div className="cntct-crd">
-    <div className="cntct-crd-icon"><img src="./public/Location.png" alt="" srcset="" /></div>
+    <div className="cntct-crd-icon"><img src="../Location.png" alt="" srcset="" /></div>
     <div className="cntct-crd-head">Address:</div>
     <div className="cntct-crd-text">16, Boyle Street, Onikan, Lagos.</div>
   </div>
 
   <div className="cntct-crd">
-    <div className="cntct-crd-icon"><img src="./public/Phone.png" alt="" srcset="" /></div>
+    <div className="cntct-crd-icon"><img src="../Phone.png" alt="" srcset="" /></div>
     <div className="cntct-crd-head">Phone:</div>
     <div className="cntct-crd-text">+2348037861308</div>
   </div>
 
   <div className="cntct-crd">
-    <div className="cntct-crd-icon"><img src="./public/email.png" alt="" srcset="" /></div>
+    <div className="cntct-crd-icon"><img src="../email.png" alt="" srcset="" /></div>
     <div className="cntct-crd-head">Email:</div>
     <div className="cntct-crd-text">info@embedigital.com.ng</div>
   </div>

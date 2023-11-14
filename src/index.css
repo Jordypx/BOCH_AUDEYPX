@@ -773,6 +773,7 @@ fieldset {
 
 .copyright {
   text-align: center;
+  padding: 1rem;
 }
 
 #contact input:focus,
