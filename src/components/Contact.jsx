@@ -211,7 +211,7 @@ const Contact = () => {
   <div className="cntct-crd">
     <div className="cntct-crd-icon"><img src="../email.png" alt="" srcset="" /></div>
     <div className="cntct-crd-head">Email:</div>
-    <div className="cntct-crd-text">info@embedigital.com.ng</div>
+    <div className="cntct-crd-text"><a href="mailto:">info@embedigital.com.ng</a></div>
   </div>
 </div>
         
