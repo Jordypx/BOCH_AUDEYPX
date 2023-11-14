@@ -194,6 +194,27 @@ const Contact = () => {
             </form>
           </div>
         </div>
+
+<div className="contact-card">
+  <div className="cntct-crd">
+    <div className="cntct-crd-icon"><img src="./public/Location.png" alt="" srcset="" /></div>
+    <div className="cntct-crd-head">Address:</div>
+    <div className="cntct-crd-text">16, Boyle Street, Onikan, Lagos.</div>
+  </div>
+
+  <div className="cntct-crd">
+    <div className="cntct-crd-icon"><img src="./public/Phone.png" alt="" srcset="" /></div>
+    <div className="cntct-crd-head">Phone:</div>
+    <div className="cntct-crd-text">+2348037861308</div>
+  </div>
+
+  <div className="cntct-crd">
+    <div className="cntct-crd-icon"><img src="./public/email.png" alt="" srcset="" /></div>
+    <div className="cntct-crd-head">Email:</div>
+    <div className="cntct-crd-text">info@embedigital.com.ng</div>
+  </div>
+</div>
+        
       </div>
 
       <footer>
@@ -244,6 +265,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        <p className="copyright">© 2024 Embed Digital Solutions</p>
       </footer>
     </div>
   );

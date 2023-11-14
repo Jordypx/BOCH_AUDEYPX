@@ -595,7 +595,7 @@ form textarea {
 form .btn-message {
   cursor: pointer;
   margin-top: 1.9rem;
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
 }
 
 form .btn-message button {
@@ -607,6 +607,58 @@ form .btn-message button {
   border-radius: 0.3rem;
   letter-spacing: 0.7px;
 }
+
+/* ----CONTACT-CARD---- */
+.contact-card{
+  display: flex;
+  padding: 1.5rem;
+  color: #fff;
+  margin: 3rem auto;
+  justify-content: space-evenly;
+  width: 60%;
+  background: #0c172b;
+  text-align: center;
+  /* align-items: center; */
+  box-shadow: 0 0 20px 0 rgba(56, 54, 54, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.cntct-crd{
+  padding: 0.5rem 2rem;
+}
+
+.cntct-crd-icon{
+  padding-bottom: 1rem;
+  /* align-items: center; */
+}
+
+.cntct-crd-icon img{
+  margin: auto;
+}
+
+.cntct-crd-head{
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-bottom: 0.4rem;
+}
+
+.cntct-crd-text{
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+.contact-card{
+  flex-direction: column;
+  width: 85%;
+}
+
+.cntct-crd{
+  padding: 1rem;
+}
+}
+
 
 /* ----QUOTE---- */
 .quote-body {
@@ -1073,7 +1125,7 @@ fieldset {
   font-weight: 300;
 }
 
-.pricing-table .pricing-table-item .pricing-table-item-price > span {
+.pricing-table .pricing-table-item .pricing-table-item-price>span {
   font-size: 12px;
   font-weight: 400;
   color: #009ad7;
@@ -1167,6 +1219,7 @@ fieldset {
   html {
     scroll-behavior: smooth;
   }
+
   body {
     width: 100%;
     height: 100%;
@@ -1350,8 +1403,7 @@ fieldset {
 }
 
 @media screen and (min-width: 600px) {
-  .rwd-table tr:hover:not(:first-child) {
-  }
+  .rwd-table tr:hover:not(:first-child) {}
 
   .rwd-table td:before {
     display: none;
@@ -1458,6 +1510,13 @@ h3:after {
   100% {
     transform: translateX(0);
   }
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 0.8rem;
 }
 
 /*

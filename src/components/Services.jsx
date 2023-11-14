@@ -431,6 +431,8 @@ const Services = () => {
             </div>
           </div>
         </div>
+
+        <p className="copyright">© 2024 Embed Digital Solutions</p>
       </footer>
     </div>
   );
