@@ -99,10 +99,10 @@ const Home = () => {
                   Embed Digital Solutions (EDS) deploys Digital Insurance
                   solutions to deliver a competitive advantage within the
                   insurance and health services value chain, by taking into
-                  account the needs of every stakeholder within the Ecosystem.
-                  Our cooperate Objective is to democratise access to affordable
-                  digital platforms for optimized financial performance for the
-                  benefit of all stakeholders.
+                  account, the needs of every stakeholder within the Ecosystem.
+                  Our corporate Objective is to democratise access to affordable
+                  digital platforms for optimized financial performance for
+                  the benefit of all stakeholders.
                 </p>
               </div>
 

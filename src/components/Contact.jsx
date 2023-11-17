@@ -147,7 +147,7 @@ const Contact = () => {
             <h1>Contact Us </h1>
 
             <p>
-              contact us now to meet your needs and desire at embed digital
+              Contact us now to meet your needs and desire at embed digital
               solutions
             </p>
           </div>

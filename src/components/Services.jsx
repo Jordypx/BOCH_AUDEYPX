@@ -100,7 +100,7 @@ const Services = () => {
                 </div>
 
                 <div className="">
-                  <p>swift and easy development</p>
+                  <p>Swift and Easy Development</p>
                 </div>
               </div>
               <div className="features">
@@ -109,7 +109,7 @@ const Services = () => {
                 </div>
 
                 <div className="">
-                  <p>insurance industry expertise</p>
+                  <p>Insurance Industry Expertise</p>
                 </div>
               </div>
               <div className="features">
@@ -118,7 +118,7 @@ const Services = () => {
                 </div>
 
                 <div className="">
-                  <p>software as a services provider</p>
+                  <p>Software as a Service Provider</p>
                 </div>
               </div>
               <div className="features">
@@ -127,7 +127,7 @@ const Services = () => {
                 </div>
 
                 <div className="">
-                  <p>enterprise data warehouse</p>
+                  <p>Enterprise Data Warehouse</p>
                 </div>
               </div>
               <div className="features">
@@ -136,7 +136,7 @@ const Services = () => {
                 </div>
 
                 <div className="">
-                  <p>big data bi</p>
+                  <p>Big Data Bi</p>
                 </div>
               </div>
               <div className="features">
@@ -145,7 +145,7 @@ const Services = () => {
                 </div>
 
                 <div className="">
-                  <p>omni channel customer experience and apis</p>
+                  <p>Omni Channel Customer Experience and APIs</p>
                 </div>
               </div>
               <div className="features">
@@ -154,7 +154,7 @@ const Services = () => {
                 </div>
 
                 <div className="">
-                  <p>flexible and modular product design</p>
+                  <p>Flexible and Modular Product Design</p>
                 </div>
               </div>
               <div className="features">
@@ -163,7 +163,7 @@ const Services = () => {
                 </div>
 
                 <div className="">
-                  <p>policy and claim management</p>
+                  <p>Policy and Claim Management</p>
                 </div>
               </div>
             </div>

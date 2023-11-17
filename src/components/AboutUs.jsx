@@ -130,7 +130,7 @@ const AboutUs = () => {
             </div>
 
             <div className="bio-text">
-              <h1>Steve Ajdua</h1>
+              <h1>Steve Ajudua</h1>
 
               <p>Country Business Manager</p>
               <div>(Nigeria & Africa Region)</div>
@@ -145,7 +145,7 @@ const AboutUs = () => {
               and digital technology. He is an Actuary and a Certified Insurance
               and Marketing Professional. He led the team at Coronation
               Financial Distribution, a company under the Coronation Group to
-              set up their digital platform Architecture for Financial services
+              set up their digital platform Architecture for Financial Services
               sales and distribution. Before joining the Coronation Ecosystem,
               he worked with African Alliance as the GM of Business Development
               and was also the GM/Chief Marketing Office with Law Union & Rock
